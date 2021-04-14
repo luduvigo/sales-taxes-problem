@@ -10,8 +10,8 @@ test('Should create new element with no taxes - chips', () => {
 test('Should reate new element with VAT taxes - laptop', () => {
     const basketElement = new BasketElement(1, 'laptop', 1160.60)
     expect(basketElement.itemPrice).toEqual(1160.60)
-    expect(basketElement.itemTaxes).toEqual(116.05)
-    expect(basketElement.total).toEqual(1276.65)
+    expect(basketElement.itemTaxes).toEqual(116.10)
+    expect(basketElement.total).toEqual(1276.70)
 
 })
 
@@ -58,6 +58,6 @@ test('Should send Error if we pass a string as unitPrice', () => {
 test('Should check item with duty taxes', () => {
     const basketElement = new BasketElement(3, 'box of imported chocolates', 11.25)
     expect(basketElement.itemPrice).toEqual(11.25)
-    expect(basketElement.itemTaxes).toEqual(0.55)
-    expect(basketElement.total).toEqual(35.40)
+    expect(basketElement.itemTaxes).toEqual(0.60)
+    expect(basketElement.total).toEqual(35.55)
 })

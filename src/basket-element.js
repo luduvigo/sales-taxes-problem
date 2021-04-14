@@ -32,7 +32,7 @@ class BasketElement {
       taxes += itemPrice * 0.05;
     }
     //Multiplying and dividing by 20 to get two decimal digits rounded to 0.05
-    return Math.round(taxes * 20) / 20;
+    return Math.ceil(taxes * 20) / 20;
   }
 }
 
