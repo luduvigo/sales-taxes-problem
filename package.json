@@ -1,0 +1,19 @@
+{
+  "name": "farmscape-assignment",
+  "version": "1.0.0",
+  "description": "Farmscape Assigment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "test",
+    "farmscape"
+  ],
+  "author": "luduvigo (Paolo Antonio Rossi)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
